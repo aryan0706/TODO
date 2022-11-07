@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>DoIT</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<div class="sidebar">
+		<div class="logo">DoIT</div>
+		<div class="home sidebar-item">
+			<img class="polygon" src="./ui/polygon.svg" alt="" />
+			<img class="home-icon" src="./ui/House-dark.svg" alt="" />
+		</div>
+		<div class="imp sidebar-item">
+			<img class="star" src="./ui/star-light.svg" alt="" />
+		</div>
+		<div class="add sidebar-item">
+			<img src="./ui/Plus-dark.svg" alt="" />
+		</div>
+	</div>
+	<div class="main-frame">
+		<div class="tasks frame">
+			<div class="heading">Tasks</div>
+			<hr />
+			<div class="tasklist">
+				<ul id="list-tasks"></ul>
+			</div>
+		</div>
+		<div class="completed frame">
+			<div class="heading">Completed</div>
+			<hr />
+			<div class="tasklist">
+				<ul id="list-completed"></ul>
+			</div>
+		</div>
+		
+	</div>
+	<div class="add-task-container frame row">
+		<form action="" id="form" class="add-task row">
+			<div class="text">
+				<input type="text" class="add-text" id="input" autofocus autocomplete="off"/>
+			</div>
+			<button class="add-task-button" type="submit" id="submit">
+				<img src="./ui/Plus-light.svg" alt="" />
+			</button>
+		</form>
+	</div>
+	<script src="src/script.js"></script>
+</body>
+
+</html>
